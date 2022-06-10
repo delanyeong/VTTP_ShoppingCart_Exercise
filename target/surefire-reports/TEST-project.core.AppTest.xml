@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SG"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18\bin"/>
-    <property name="sun.java.command" value="C:\Users\delan\AppData\Local\Temp\surefire3776601221770391458\surefirebooter10485740765161521642.jar C:\Users\delan\AppData\Local\Temp\surefire3776601221770391458 2022-06-09T20-19-57_539-jvmRun1 surefire4344866154597671331tmp surefire_06333437226332811874tmp"/>
+    <property name="sun.java.command" value="C:\Users\delan\AppData\Local\Temp\surefire14827192336635506477\surefirebooter5256666309719133568.jar C:\Users\delan\AppData\Local\Temp\surefire14827192336635506477 2022-06-10T19-20-29_807-jvmRun1 surefire11849912914293474820tmp surefire_017926082676568133270tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\delan\VTTP\project1\target\test-classes;C:\Users\delan\VTTP\project1\target\classes;C:\Users\delan\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\delan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\delan\AppData\Local\Temp\surefire3776601221770391458\surefirebooter10485740765161521642.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\delan\AppData\Local\Temp\surefire14827192336635506477\surefirebooter5256666309719133568.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18+36-2087"/>
@@ -49,12 +49,12 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-18\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\opt\apache-maven-3.8.5\bin;C:\Users\delan\AppData\Local\Programs\Python\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Microsoft MPI\Bin\;C:\SIMULIA\Commands;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\delan\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\delan\AppData\Local\Programs\Python\Python38\;C:\Users\delan\AppData\Local\Microsoft\WindowsApps;C:\Users\delan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\delan\AppData\Roaming\npm;C:\Users\delan\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;C:\Program Files\heroku\bin;C:\Users\delan\AppData\Local\Yarn\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\opt\apache-maven-3.8.5\bin;C:\Users\delan\AppData\Local\Programs\Python\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Microsoft MPI\Bin\;C:\SIMULIA\Commands;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\delan\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\delan\AppData\Local\Programs\Python\Python38\;C:\Users\delan\AppData\Local\Microsoft\WindowsApps;C:\Users\delan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\delan\AppData\Roaming\npm;C:\Users\delan\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Program Files\heroku\bin;C:\Users\delan\AppData\Local\Yarn\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="18+36-2087"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="project.core.AppTest" time="0.003"/>
+  <testcase name="shouldAnswerWithTrue" classname="project.core.AppTest" time="0.002"/>
 </testsuite>
