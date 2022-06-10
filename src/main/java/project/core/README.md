@@ -18,51 +18,67 @@ public class ShoppingCart {
 
     public static void main(String[] args) throws IOException {
 
-        try {
+        // SET UP SERVER SOCKET
+        ServerSocket ss = new ServerSocket(3000);
+        Socket s = ss.accept();
 
-            // set up server socket
-            ServerSocket ss = new ServerSocket(3000);
-            Socket s = ss.accept();
+        System.out.println("client connected");
 
-            System.out.println("client connected");
+        // 1B SERVER -
+        // INPUTSTREAM READER FOR THE INPUTSTREAM THEN BUFFERREADER
+        // TO READ
+        InputStreamReader in = new InputStreamReader(s.getInputStream());
+        BufferedReader bf = new BufferedReader(in);
+        
+        // // TO WRITE
+        // PrintWriter pr = new PrintWriter(s.getOutputStream());
+        // pr.println("hello");
+        //pr.flush();
+        // pr.close();
 
-            // 1b SERVER -
-            // INPUTSTREAM READER FOR THE INPUTSTREAM THEN BUFFERREADER
-            // to read
-            InputStreamReader in = new InputStreamReader(s.getInputStream());
-            BufferedReader bf = new BufferedReader(in);
+        // String str = bf.readLine();
+        // System.out.println("client :" + str);
 
-            String str = bf.readLine();
-            System.out.println("client :" + str);
-
-            // 2a SERVER -
-            // PRINTER INTO THE OUTPUTSTREAM
-            // to write
-            PrintWriter pr = new PrintWriter(s.getOutputStream());
-            pr.println("yes");
-            pr.flush();
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        // THIS IS WHERE TASK 1 STARTS
+        // ====================================================
 
         File directory = new File("./src/main/java/project/core/shoppingcart");
         int fileCount = directory.list().length;
 
-        // Scanner
-        Scanner open = new Scanner(System.in);
-        // There are n carts in shoppingcart directory
+        // SCANNER
+        // Scanner open = new Scanner(System.in);
+
+        // THERE ARE N CARTS IN SHOPPINGCART DIRECTORY
+        // System.out.printf("There are %d carts in shoppingcart directory\n",
+        // fileCount);
         System.out.printf("There are %d carts in shoppingcart directory\n", fileCount);
 
-        // this is where you type load name
-        String input = open.nextLine();
+        // THIS IS WHERE YOU TYPE LOAD NAME
+        // String input = open.readLine();
+        String input = bf.readLine();
+        System.out.println("this is input:" + input); // to check
 
         String[] firstline = input.split(" ");
         String fname = firstline[1];
 
+        // try {
+            
+            
+        //     // TO WRITE
+        //     PrintWriter pr = new PrintWriter(s.getOutputStream());
+        //     pr.println("hello");
+
+        //     pr.close();
+
+        // } catch(IOException ex){
+        //     ex.printStackTrace();
+        // }
+
         if (firstline[0].equals("load")) {
 
-            System.out.println(fname + " shopping cart loaded");
+
+            // System.out.println(fname + " shopping cart loaded");
+            // pr.println(fname + " shopping cart loaded");
 
             try {
 
@@ -81,8 +97,8 @@ public class ShoppingCart {
                 boolean stop = false;
 
                 while (!stop) {
-                    Console cons = System.console();
-                    String input2 = cons.readLine();
+                    // Console cons = System.console();
+                    String input2 = bf.readLine();
 
                     String[] terms = input2.split(" ");
                     String cmd = terms[0];
@@ -98,7 +114,8 @@ public class ShoppingCart {
                                 }
                                 if (!found) {
                                     fredCart.getCart().add(terms[i]);
-                                    System.out.printf("Added %s to cart\n", terms[i]);
+                                    // System.out.printf("Added %s to cart\n", terms[i]);
+                                    pr.printf("Added %s to cart\n", terms[i]);
                                 }
                             }
                             break;
@@ -106,29 +123,36 @@ public class ShoppingCart {
                         case "list":
                             if (fredCart.getCart().size() > 0) {
                                 for (int i = 0; i < fredCart.getCart().size(); i++) {
-                                    System.out.printf("%d. %s\n", (i + 1), fredCart.getCart().get(i));
+                                    // System.out.printf("%d. %s\n", (i + 1), fredCart.getCart().get(i));
+                                    pr.printf("%d. %s\n", (i + 1), fredCart.getCart().get(i));
                                 }
                             } else {
-                                System.out.println("Your cart is empty");
+                                // System.out.println("Your cart is empty");
+                                pr.println("Your cart is empty");
                             }
                             break;
 
                         case "del":
                             if (terms.length < 2) {
-                                System.err.println("Please provide an index to delete");
+                                // System.err.println("Please provide an index to delete");
+                                pr.println("Please provide an index to delete");
                             } else {
                                 delIndex = Integer.parseInt(terms[1]) - 1;
                                 if (delIndex < fredCart.getCart().size()) {
-                                    System.out.printf("Deleted %s from cart\n", fredCart.getCart().get(delIndex));
+                                    // System.out.printf("Deleted %s from cart\n",
+                                    // fredCart.getCart().get(delIndex));
+                                    pr.printf("Deleted %s from cart\n", fredCart.getCart().get(delIndex));
                                     fredCart.getCart().remove(delIndex);
                                 } else {
-                                    System.err.println("No such item");
+                                    // System.err.println("No such item");
+                                    pr.println("No such item");
                                 }
                             }
                             break;
 
                         case "end":
                             stop = true;
+                            pr.println("exited");
                             break;
 
                         default:
@@ -142,7 +166,9 @@ public class ShoppingCart {
 
                 os.close();
 
-                open.close();
+                // s.close();
+
+                // open.close();
 
             } catch (Exception ex) {
                 ex.printStackTrace();
