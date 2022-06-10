@@ -59,19 +59,6 @@ public class ShoppingCart {
                     System.out.println("Client: " + input);
 
                     
-
-                    
-
-                    
-
-                    
-
-                    
-
-                   
-
-                        
-
                         try {
 
                             // FileInputStream fileStream = new FileInputStream(
@@ -82,8 +69,6 @@ public class ShoppingCart {
                             // Cart fredCart = (Cart) is.readObject();
 
                             // is.close();
-
-                            
 
                             int delIndex;
                             boolean stop = false;
@@ -141,12 +126,12 @@ public class ShoppingCart {
                                             for (int i = 0; i < fredCart.getCart().size(); i++) {
                                                 // System.out.printf("%d. %s\n", (i + 1), fredCart.getCart().get(i));
                                                 bufferedWriter.write((i+1) + ". " + fredCart.getCart().get(i));
-                                                bufferedWriter.newLine();
-                                                bufferedWriter.flush();
-                                                
-                                                input = bufferedReader.readLine();
-                                                System.out.println("Client: " + input);
                                             }
+                                            bufferedWriter.newLine();
+                                            bufferedWriter.flush();
+                                            
+                                            input = bufferedReader.readLine();
+                                            System.out.println("Client: " + input);
                                         } else {
                                             // System.out.println("Your cart is empty");
                                             bufferedWriter.write("Your cart is empty");
@@ -195,6 +180,7 @@ public class ShoppingCart {
                                         break;
 
                                     default:
+                                        break;
                                 }
                             }
 
